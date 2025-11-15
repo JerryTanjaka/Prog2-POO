@@ -1,9 +1,6 @@
 package note;
 
-import lombok.AllArgsConstructor;
-
 import java.time.LocalDate;
-
 
 public class Tutor extends User{
     private String relationship;

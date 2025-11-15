@@ -13,7 +13,6 @@ public class Grade {
     private Exam exam;
     private double initialValue;
     private List<GradeHistory> historyList = new ArrayList<>();
-
     public Grade(Exam exam, double initialValue) {
         this.exam = exam;
         this.initialValue = initialValue;
