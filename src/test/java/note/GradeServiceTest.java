@@ -48,4 +48,11 @@ public class GradeServiceTest {
         double note = gradeService.getExamGrade(examMidterm, jerry, Instant.parse("2024-06-15T09:00:00Z"));
         Assertions.assertEquals(12.0, note, 0.001);
     }
+
+    @Test
+    @DisplayName("Vérifie la note finale du cours")
+    void testGetCourseGrade() {
+        double finalGrade = gradeService.getCourseGrade(prog2, jerry, Instant.parse("2024-06-30T11:00:00Z"));
+        Assertions.assertEquals(12.6, finalGrade, 0.001);
+    }
 }
